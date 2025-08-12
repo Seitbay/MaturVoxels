@@ -3,13 +3,13 @@
 
 # compile C with C:/msys64/mingw64/bin/cc.exe
 # compile CXX with C:/msys64/mingw64/bin/c++.exe
-C_DEFINES = -DASSET_DIR=\"F:/3D_projects/OpenGLEngine/assets/\"
+C_DEFINES = -DASSET_DIR=\"E:/3D_projects/OpenGLEngine/assets/\"
 
 C_INCLUDES = @CMakeFiles/OpenGLEngine.dir/includes_C.rsp
 
 C_FLAGS = 
 
-CXX_DEFINES = -DASSET_DIR=\"F:/3D_projects/OpenGLEngine/assets/\"
+CXX_DEFINES = -DASSET_DIR=\"E:/3D_projects/OpenGLEngine/assets/\"
 
 CXX_INCLUDES = @CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 

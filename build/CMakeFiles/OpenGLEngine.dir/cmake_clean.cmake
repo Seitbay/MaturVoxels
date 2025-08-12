@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.obj.d"
   "CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj"
   "CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj.d"
+  "CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj"
+  "CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj.d"
   "CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj"
   "CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj.d"
   "CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj"

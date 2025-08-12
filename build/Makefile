@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\3D_projects\OpenGLEngine
+CMAKE_SOURCE_DIR = E:\3D_projects\OpenGLEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\3D_projects\OpenGLEngine\build
+CMAKE_BINARY_DIR = E:\3D_projects\OpenGLEngine\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\3D_projects\OpenGLEngine\build\CMakeFiles F:\3D_projects\OpenGLEngine\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\3D_projects\OpenGLEngine\build\CMakeFiles E:\3D_projects\OpenGLEngine\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\3D_projects\OpenGLEngine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\3D_projects\OpenGLEngine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -199,6 +199,30 @@ src/Mesh.s: src/Mesh.cpp.s
 src/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.s
 .PHONY : src/Mesh.cpp.s
+
+src/Model.obj: src/Model.cpp.obj
+.PHONY : src/Model.obj
+
+# target to build an object file
+src/Model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj
+.PHONY : src/Model.cpp.obj
+
+src/Model.i: src/Model.cpp.i
+.PHONY : src/Model.i
+
+# target to preprocess a source file
+src/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Model.cpp.i
+.PHONY : src/Model.cpp.i
+
+src/Model.s: src/Model.cpp.s
+.PHONY : src/Model.s
+
+# target to generate assembly for a file
+src/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Model.cpp.s
+.PHONY : src/Model.cpp.s
 
 src/Texture.obj: src/Texture.cpp.obj
 .PHONY : src/Texture.obj
@@ -410,6 +434,9 @@ help:
 	@echo ... src/Mesh.obj
 	@echo ... src/Mesh.i
 	@echo ... src/Mesh.s
+	@echo ... src/Model.obj
+	@echo ... src/Model.i
+	@echo ... src/Model.s
 	@echo ... src/Texture.obj
 	@echo ... src/Texture.i
 	@echo ... src/Texture.s
