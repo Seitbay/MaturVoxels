@@ -176,6 +176,30 @@ src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
 
+src/LightSource.obj: src/LightSource.cpp.obj
+.PHONY : src/LightSource.obj
+
+# target to build an object file
+src/LightSource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj
+.PHONY : src/LightSource.cpp.obj
+
+src/LightSource.i: src/LightSource.cpp.i
+.PHONY : src/LightSource.i
+
+# target to preprocess a source file
+src/LightSource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.i
+.PHONY : src/LightSource.cpp.i
+
+src/LightSource.s: src/LightSource.cpp.s
+.PHONY : src/LightSource.s
+
+# target to generate assembly for a file
+src/LightSource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.s
+.PHONY : src/LightSource.cpp.s
+
 src/Mesh.obj: src/Mesh.cpp.obj
 .PHONY : src/Mesh.obj
 
@@ -223,6 +247,30 @@ src/Model.s: src/Model.cpp.s
 src/Model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Model.cpp.s
 .PHONY : src/Model.cpp.s
+
+src/PointLight.obj: src/PointLight.cpp.obj
+.PHONY : src/PointLight.obj
+
+# target to build an object file
+src/PointLight.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj
+.PHONY : src/PointLight.cpp.obj
+
+src/PointLight.i: src/PointLight.cpp.i
+.PHONY : src/PointLight.i
+
+# target to preprocess a source file
+src/PointLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.i
+.PHONY : src/PointLight.cpp.i
+
+src/PointLight.s: src/PointLight.cpp.s
+.PHONY : src/PointLight.s
+
+# target to generate assembly for a file
+src/PointLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.s
+.PHONY : src/PointLight.cpp.s
 
 src/Texture.obj: src/Texture.cpp.obj
 .PHONY : src/Texture.obj
@@ -431,12 +479,18 @@ help:
 	@echo ... src/EBO.obj
 	@echo ... src/EBO.i
 	@echo ... src/EBO.s
+	@echo ... src/LightSource.obj
+	@echo ... src/LightSource.i
+	@echo ... src/LightSource.s
 	@echo ... src/Mesh.obj
 	@echo ... src/Mesh.i
 	@echo ... src/Mesh.s
 	@echo ... src/Model.obj
 	@echo ... src/Model.i
 	@echo ... src/Model.s
+	@echo ... src/PointLight.obj
+	@echo ... src/PointLight.i
+	@echo ... src/PointLight.s
 	@echo ... src/Texture.obj
 	@echo ... src/Texture.i
 	@echo ... src/Texture.s

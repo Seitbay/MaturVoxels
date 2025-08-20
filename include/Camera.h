@@ -39,6 +39,10 @@ public:
 	void updateMatrix(float FOVdeg, float nearPlane, float farPlane);
 	void Matrix(Shader& shader, const char* uniform);
 
+	glm::mat4 getViewMatrix();
+
+	glm::mat4 getProjectionMatrix(float FOVdeg, float nearPlane, float farPlane);
+
 	// Handles camera inputs
 	void Inputs(GLFWwindow* window, float deltaTime);
 };

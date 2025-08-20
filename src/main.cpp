@@ -1,4 +1,5 @@
 #include"Model.h"
+#include"PointLight.h"
 #include<chrono>
 #include <thread>
 
@@ -23,6 +24,21 @@ float rectangleVertices[] =
 	 1.0f, -1.0f,  1.0f, 0.0f,
 	-1.0f,  1.0f,  0.0f, 1.0f
 };
+
+float axisVertices[] = {
+    // X (red)
+    0.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+    1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+
+    // Y (green)
+    0.0f, 0.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+    0.0f, 1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+
+    // Z (blue)
+    0.0f, 0.0f, 0.0f,  0.0f, 0.0f, 1.0f,
+    0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f
+};
+
 
 
 int main() {
@@ -58,7 +74,7 @@ int main() {
 	Shader framebufferProgram("assets/shaders/framebuffer.vert", "assets/shaders/framebuffer.frag");
 
 	glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
-	glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
+	glm::vec3 lightPos = glm::vec3(1.6f, 1.8f, 0.0f);
 	glm::mat4 lightModel = glm::mat4(1.0f);
 	lightModel = glm::translate(lightModel, lightPos);
 
@@ -66,13 +82,7 @@ int main() {
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
-	framebufferProgram.Activate();
-	glUniform1i(glGetUniformLocation(framebufferProgram.ID, "screenTexture"), 0);
-
-	std::cout << "Program here " << std::endl;
-
 	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-	std::cout << "Program here " << std::endl;
 
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(window);
@@ -96,42 +106,31 @@ int main() {
 	Model sword("assets/Models/sword/scene.gltf");
 	Model light("assets/Models/LightSource/LightSource.gltf");
 
-	unsigned int rectangleVAO, rectangleVBO;
-	glGenVertexArrays(1, &rectangleVAO);
-	glGenBuffers(1, &rectangleVBO);
-	glBindVertexArray(rectangleVAO);
-	glBindBuffer(GL_ARRAY_BUFFER, rectangleVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(rectangleVertices), rectangleVertices, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
+	PointLight pointLight(lightColor, lightPos);
+
+
+	// ========== temporary VAO for axis ================
+	unsigned int axisVAO, axisVBO;
+	glGenVertexArrays(1, &axisVAO);
+	glGenBuffers(1, &axisVBO);
+
+	glBindVertexArray(axisVAO);
+
+	glBindBuffer(GL_ARRAY_BUFFER, axisVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(axisVertices), axisVertices, GL_STATIC_DRAW);
+
+	// позиции
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
+
+	// цвета
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glBindVertexArray(0);
 
-	unsigned int FBO;
-	glGenFramebuffers(1, &FBO);
-	glBindFramebuffer(GL_FRAMEBUFFER, FBO);
+	Shader axisShader("assets/shaders/axis.vert", "assets/shaders/axis.frag");
+	// ==================================================
 
-	unsigned int framebufferTexture;
-	glGenTextures(1, &framebufferTexture);
-	glBindTexture(GL_TEXTURE_2D, framebufferTexture);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, framebufferTexture, 0);
-
-	unsigned int rbo;
-	glGenRenderbuffers(1, &rbo);
-	glBindRenderbuffer(GL_RENDERBUFFER, rbo);
-	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo);
-
-	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
-		std::cout << "Framebuffer not complete!" << std::endl;
-	}
+glBindVertexArray(0);
 
 	while (!glfwWindowShouldClose(window)) {
 		float currentFrameTime = glfwGetTime();
@@ -144,32 +143,37 @@ int main() {
 			std::this_thread::sleep_for(std::chrono::duration<float>(targetFrameTime - frameTime));
 		}
 		
-		glBindFramebuffer(GL_FRAMEBUFFER, FBO);
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_DEPTH_TEST);
 
 		camera.Inputs(window, deltaTime);
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);
+		pointLight.Draw(lightShader, camera);	
 		sword.Draw(shaderProgram, camera);
 		light.Draw(shaderProgram, camera);
-		/*
-		glBindFramebuffer(GL_FRAMEBUFFER, 0);
-		framebufferProgram.Activate();
-		glBindVertexArray(rectangleVAO);
-		glDisable(GL_DEPTH_TEST);
-		glBindTexture(GL_TEXTURE_2D, framebufferTexture);
-		glDrawArrays(GL_TRIANGLES, 0, 6);
-		*/
 		
+		// Gismos todo create class for it and more features
+		{
+			glDisable(GL_DEPTH_TEST);
+			axisShader.Activate();
+			camera.Matrix(axisShader, "camMatrix");
+			glBindVertexArray(axisVAO);
+			glDrawArrays(GL_LINES, 0, 6);
+			glEnable(GL_DEPTH_TEST);
+		}
+		//=================================================
+
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
 
 	shaderProgram.Delete();
-	glDeleteVertexArrays(1, &rectangleVAO);
-	glDeleteBuffers(1, &rectangleVBO);
+	lightShader.Delete();
+	axisShader.Delete();
+	glDeleteVertexArrays(1, &axisVAO);
+	glDeleteBuffers(1, &axisVBO);
 
 	glfwDestroyWindow(window);
 
