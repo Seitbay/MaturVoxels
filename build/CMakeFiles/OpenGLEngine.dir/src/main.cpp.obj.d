@@ -471,9 +471,14 @@ CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  E:/3D_projects/OpenGLEngine/include/Texture.h \
  E:/3D_projects/OpenGLEngine/include/stb/stb_image.h \
- E:/3D_projects/OpenGLEngine/include/PointLight.h \
+ E:/3D_projects/OpenGLEngine/include/LightManager.h \
  E:/3D_projects/OpenGLEngine/include/LightSource.h \
  E:/3D_projects/OpenGLEngine/include/Model.h \
+ E:/3D_projects/OpenGLEngine/include/PointLight.h \
+ E:/3D_projects/OpenGLEngine/include/LightSource.h \
+ E:/3D_projects/OpenGLEngine/include/DirectionalLight.h \
+ E:/3D_projects/OpenGLEngine/include/SpotLight.h \
+ E:/3D_projects/OpenGLEngine/include/UBO.h \
  C:/msys64/mingw64/include/c++/15.2.0/chrono \
  C:/msys64/mingw64/include/c++/15.2.0/thread \
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_thread.h \

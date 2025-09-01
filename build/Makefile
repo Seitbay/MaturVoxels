@@ -176,6 +176,30 @@ src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
 
+src/LightManager.obj: src/LightManager.cpp.obj
+.PHONY : src/LightManager.obj
+
+# target to build an object file
+src/LightManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj
+.PHONY : src/LightManager.cpp.obj
+
+src/LightManager.i: src/LightManager.cpp.i
+.PHONY : src/LightManager.i
+
+# target to preprocess a source file
+src/LightManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.i
+.PHONY : src/LightManager.cpp.i
+
+src/LightManager.s: src/LightManager.cpp.s
+.PHONY : src/LightManager.s
+
+# target to generate assembly for a file
+src/LightManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.s
+.PHONY : src/LightManager.cpp.s
+
 src/LightSource.obj: src/LightSource.cpp.obj
 .PHONY : src/LightSource.obj
 
@@ -295,6 +319,30 @@ src/Texture.s: src/Texture.cpp.s
 src/Texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
+
+src/UBO.obj: src/UBO.cpp.obj
+.PHONY : src/UBO.obj
+
+# target to build an object file
+src/UBO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj
+.PHONY : src/UBO.cpp.obj
+
+src/UBO.i: src/UBO.cpp.i
+.PHONY : src/UBO.i
+
+# target to preprocess a source file
+src/UBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.i
+.PHONY : src/UBO.cpp.i
+
+src/UBO.s: src/UBO.cpp.s
+.PHONY : src/UBO.s
+
+# target to generate assembly for a file
+src/UBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLEngine.dir\build.make CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.s
+.PHONY : src/UBO.cpp.s
 
 src/VAO.obj: src/VAO.cpp.obj
 .PHONY : src/VAO.obj
@@ -479,6 +527,9 @@ help:
 	@echo ... src/EBO.obj
 	@echo ... src/EBO.i
 	@echo ... src/EBO.s
+	@echo ... src/LightManager.obj
+	@echo ... src/LightManager.i
+	@echo ... src/LightManager.s
 	@echo ... src/LightSource.obj
 	@echo ... src/LightSource.i
 	@echo ... src/LightSource.s
@@ -494,6 +545,9 @@ help:
 	@echo ... src/Texture.obj
 	@echo ... src/Texture.i
 	@echo ... src/Texture.s
+	@echo ... src/UBO.obj
+	@echo ... src/UBO.i
+	@echo ... src/UBO.s
 	@echo ... src/VAO.obj
 	@echo ... src/VAO.i
 	@echo ... src/VAO.s

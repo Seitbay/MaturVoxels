@@ -1,5 +1,5 @@
 #include"Model.h"
-#include"PointLight.h"
+#include"LightManager.h"
 #include<chrono>
 #include <thread>
 
@@ -44,7 +44,6 @@ float axisVertices[] = {
 int main() {
 
 	glfwInit();
-
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -64,6 +63,11 @@ int main() {
 	glfwMakeContextCurrent(window);
 
 	gladLoadGL();
+	// ... после gladLoadGL();
+	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
+	std::cout << "GLSL Version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+	std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
+	std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
 
 	glViewport(0, 0, width, height);
 
@@ -77,10 +81,6 @@ int main() {
 	glm::vec3 lightPos = glm::vec3(1.6f, 1.8f, 0.0f);
 	glm::mat4 lightModel = glm::mat4(1.0f);
 	lightModel = glm::translate(lightModel, lightPos);
-
-	shaderProgram.Activate();
-	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
-	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
 	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 
@@ -106,7 +106,15 @@ int main() {
 	Model sword("assets/Models/sword/scene.gltf");
 	Model light("assets/Models/LightSource/LightSource.gltf");
 
-	PointLight pointLight(lightColor, lightPos);
+	// =============== Create light ===================
+	auto pointLight = std::make_unique<PointLight>(lightColor, lightPos);
+	auto pointLight2 = std::make_unique<PointLight>(glm::vec4(0.0f, 1.0f, 0.0f, 1.0f), glm::vec3(-1.6f, 1.8f, 0.0f), 0.5f, 0.1f);
+	LightManager lightManager;
+	lightManager.addLight(std::move(pointLight));
+	lightManager.addLight(std::move(pointLight2));
+	lightManager.BindAllLights(shaderProgram);
+	lightManager.updateShaderUBOs();
+	// ================================================
 
 
 	// ========== temporary VAO for axis ================
@@ -130,7 +138,9 @@ int main() {
 	Shader axisShader("assets/shaders/axis.vert", "assets/shaders/axis.frag");
 	// ==================================================
 
-glBindVertexArray(0);
+	glBindVertexArray(0);
+
+	//	std::cin.get();
 
 	while (!glfwWindowShouldClose(window)) {
 		float currentFrameTime = glfwGetTime();
@@ -149,12 +159,16 @@ glBindVertexArray(0);
 
 		camera.Inputs(window, deltaTime);
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);
-		pointLight.Draw(lightShader, camera);	
 		sword.Draw(shaderProgram, camera);
 		light.Draw(shaderProgram, camera);
-		
+
+		glDisable(GL_CULL_FACE);
+		lightManager.updateShaderUBOs();
+		lightManager.DrawAllLights(lightShader, camera);
+
+		glEnable(GL_CULL_FACE);
 		// Gismos todo create class for it and more features
-		{
+		{	
 			glDisable(GL_DEPTH_TEST);
 			axisShader.Activate();
 			camera.Matrix(axisShader, "camMatrix");

@@ -101,11 +101,26 @@ CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\3D_projects\OpenGLEngine\src\EBO.cpp -o CMakeFiles\OpenGLEngine.dir\src\EBO.cpp.s
 
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.make
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj: E:/3D_projects/OpenGLEngine/src/LightManager.cpp
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\LightManager.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\LightManager.cpp.obj -c E:\3D_projects\OpenGLEngine\src\LightManager.cpp
+
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\3D_projects\OpenGLEngine\src\LightManager.cpp > CMakeFiles\OpenGLEngine.dir\src\LightManager.cpp.i
+
+CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\3D_projects\OpenGLEngine\src\LightManager.cpp -o CMakeFiles\OpenGLEngine.dir\src\LightManager.cpp.s
+
 CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.make
 CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj: E:/3D_projects/OpenGLEngine/src/LightSource.cpp
 CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\LightSource.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\LightSource.cpp.obj -c E:\3D_projects\OpenGLEngine\src\LightSource.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.i: cmake_force
@@ -120,7 +135,7 @@ CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.
 CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj: E:/3D_projects/OpenGLEngine/src/Mesh.cpp
 CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\Mesh.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\Mesh.cpp.obj -c E:\3D_projects\OpenGLEngine\src\Mesh.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.i: cmake_force
@@ -135,7 +150,7 @@ CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags
 CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj: E:/3D_projects/OpenGLEngine/src/Model.cpp
 CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\Model.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\Model.cpp.obj -c E:\3D_projects\OpenGLEngine\src\Model.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/Model.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj: CMakeFiles/OpenGLEngine.dir/
 CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj: E:/3D_projects/OpenGLEngine/src/PointLight.cpp
 CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\PointLight.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\PointLight.cpp.obj -c E:\3D_projects\OpenGLEngine\src\PointLight.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj: CMakeFiles/OpenGLEngine.dir/fla
 CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj: E:/3D_projects/OpenGLEngine/src/Texture.cpp
 CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\Texture.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\Texture.cpp.obj -c E:\3D_projects\OpenGLEngine\src\Texture.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.i: cmake_force
@@ -176,11 +191,26 @@ CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\3D_projects\OpenGLEngine\src\Texture.cpp -o CMakeFiles\OpenGLEngine.dir\src\Texture.cpp.s
 
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.make
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj: E:/3D_projects/OpenGLEngine/src/UBO.cpp
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\UBO.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\UBO.cpp.obj -c E:\3D_projects\OpenGLEngine\src\UBO.cpp
+
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\3D_projects\OpenGLEngine\src\UBO.cpp > CMakeFiles\OpenGLEngine.dir\src\UBO.cpp.i
+
+CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\3D_projects\OpenGLEngine\src\UBO.cpp -o CMakeFiles\OpenGLEngine.dir\src\UBO.cpp.s
+
 CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.make
 CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj: E:/3D_projects/OpenGLEngine/src/VAO.cpp
 CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\VAO.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\VAO.cpp.obj -c E:\3D_projects\OpenGLEngine\src\VAO.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.i: cmake_force
@@ -195,7 +225,7 @@ CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.m
 CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj: E:/3D_projects/OpenGLEngine/src/VBO.cpp
 CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\VBO.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\VBO.cpp.obj -c E:\3D_projects\OpenGLEngine\src\VBO.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.i: cmake_force
@@ -210,7 +240,7 @@ CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.m
 CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj: E:/3D_projects/OpenGLEngine/src/glm.cpp
 CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\glm.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\glm.cpp.obj -c E:\3D_projects\OpenGLEngine\src\glm.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/glm.cpp.i: cmake_force
@@ -225,7 +255,7 @@ CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.
 CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj: E:/3D_projects/OpenGLEngine/src/main.cpp
 CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/main.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\main.cpp.obj -c E:\3D_projects\OpenGLEngine\src\main.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/main.cpp.i: cmake_force
@@ -240,7 +270,7 @@ CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj: CMakeFiles/OpenGLEngine.dir
 CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj: E:/3D_projects/OpenGLEngine/src/shaderClass.cpp
 CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\shaderClass.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\shaderClass.cpp.obj -c E:\3D_projects\OpenGLEngine\src\shaderClass.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/shaderClass.cpp.i: cmake_force
@@ -255,7 +285,7 @@ CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj: CMakeFiles/OpenGLEngine.dir/flags.m
 CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj: CMakeFiles/OpenGLEngine.dir/includes_CXX.rsp
 CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj: E:/3D_projects/OpenGLEngine/src/stb.cpp
 CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/stb.cpp.obj -MF CMakeFiles\OpenGLEngine.dir\src\stb.cpp.obj.d -o CMakeFiles\OpenGLEngine.dir\src\stb.cpp.obj -c E:\3D_projects\OpenGLEngine\src\stb.cpp
 
 CMakeFiles/OpenGLEngine.dir/src/stb.cpp.i: cmake_force
@@ -270,7 +300,7 @@ CMakeFiles/OpenGLEngine.dir/src/glad.c.obj: CMakeFiles/OpenGLEngine.dir/flags.ma
 CMakeFiles/OpenGLEngine.dir/src/glad.c.obj: CMakeFiles/OpenGLEngine.dir/includes_C.rsp
 CMakeFiles/OpenGLEngine.dir/src/glad.c.obj: E:/3D_projects/OpenGLEngine/src/glad.c
 CMakeFiles/OpenGLEngine.dir/src/glad.c.obj: CMakeFiles/OpenGLEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/OpenGLEngine.dir/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/OpenGLEngine.dir/src/glad.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/OpenGLEngine.dir/src/glad.c.obj -MF CMakeFiles\OpenGLEngine.dir\src\glad.c.obj.d -o CMakeFiles\OpenGLEngine.dir\src\glad.c.obj -c E:\3D_projects\OpenGLEngine\src\glad.c
 
 CMakeFiles/OpenGLEngine.dir/src/glad.c.i: cmake_force
@@ -285,11 +315,13 @@ CMakeFiles/OpenGLEngine.dir/src/glad.c.s: cmake_force
 OpenGLEngine_OBJECTS = \
 "CMakeFiles/OpenGLEngine.dir/src/Camera.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.obj" \
+"CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj" \
+"CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj" \
 "CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj" \
@@ -303,11 +335,13 @@ OpenGLEngine_EXTERNAL_OBJECTS =
 
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/Camera.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/EBO.cpp.obj
+OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/LightManager.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/LightSource.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/Mesh.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/Model.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/PointLight.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/Texture.cpp.obj
+OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/UBO.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/VAO.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/VBO.cpp.obj
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/src/glm.cpp.obj
@@ -319,7 +353,7 @@ OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/build.make
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/linkLibs.rsp
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/objects1.rsp
 OpenGLEngine.exe: CMakeFiles/OpenGLEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable OpenGLEngine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\3D_projects\OpenGLEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable OpenGLEngine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGLEngine.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/3D_projects/OpenGLEngine/assets E:/3D_projects/OpenGLEngine/build/assets
 
